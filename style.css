@@ -279,7 +279,10 @@ html, body{
         font-size: 3vw;
     }
     #place i{
-        font-size: 3vw;
+        font-size: 10vw;
+        position: absolute;
+        top: 48vw;
+        left: 90%;
     }
     #hero-img{
         width: 100%;
@@ -295,9 +298,50 @@ html, body{
     }
     #about-part1 h3{
         font-size: 4vw;
+        padding: 20vw 0vw;
     }
     #icons i{
         font-size: 6vw;
     }
-    
+    #work{
+        height: 75vw;
+        width: 100%;
+    }
+    #work1 h3{
+        font-size: 4vw;
+        padding: 6.4vw 0vw;
+    }
+    #work1 i{
+        font-size: 4vw;
+        padding: 6.4vw 0vw;
+    }
+    #work2{
+        width: 100%;
+    }
+    #work2 h4{
+        font-size: 4vw;
+    }
+    #work2 p{
+        font-size: 2.4vw;
+    }
+    #end-elem{
+        height: 100vh;
+        width: 100%;
+    }
+    #connect h3{
+        padding: 20vw 0vw 0vw 0vw;
+        font-size: 8vw;
+    }
+    #let h2{
+        font-size: 13vw;
+    }
+    #button h3{
+        margin-top: 50vw;
+        font-size: 5vw;
+        padding: 5vw;
+        border-radius: 10vw;
+    }
+    #end-elem h4{
+        margin-top: 100vw;
+    }
 }
