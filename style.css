@@ -9,7 +9,7 @@
 html, body{
     height: 100%;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgb(19, 19, 19);
     scroll-behavior: smooth;
 }
 #main{
@@ -32,7 +32,7 @@ html, body{
 }
 #nav-part2 h3{
     font-weight: 500;
-    border: 0.1vw solid rgb(255, 174, 0);
+    border: 0.1vw solid rgb(160, 71, 71);
     border-radius: 50px;
     background-color: rgb(255, 174, 0);
     color: white;
@@ -60,7 +60,7 @@ html, body{
 }
 #des{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(160, 71, 71);
 }
 #arrow{
     color: rgb(255, 175, 0);
@@ -70,7 +70,10 @@ html, body{
     font-size: 7.8vw;
 }
 #dot{
-    color: rgb(0, 0, 0);
+    color: rgb(160, 71, 71);
+}
+#and{
+    color: rgb(255, 175, 0);
 }
 #intro h1:hover{
     cursor: pointer;
@@ -91,9 +94,10 @@ html, body{
 }
 #place i{
     font-size: 1.56vw;
-    color: rgb(255, 174, 0)
+    color: rgb(255, 174, 0);
 }
 #place h3{
+    color: rgb(160, 71, 71);
     font-weight: 300;
 }
 #place i:hover{
@@ -113,6 +117,7 @@ html, body{
     align-items: center;
     justify-content: space-between;
     padding-bottom: 2.6vw;
+    padding-left: 2.6vw;
 }
 #about h2{
     margin-top: -10.4vw;
@@ -131,12 +136,13 @@ html, body{
     width: 36%;
     height: 100%;
     padding: 0.52vw 5.2vw;
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(238, 223, 122);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 #about-part1 h3{
+    color: rgb(160, 71, 71);
     font-size: 2.6vw;
     font-weight: 700;
 }
@@ -161,8 +167,8 @@ html, body{
 #work{
     height: 55%;
     width: 100%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid rgb(238, 223, 122);
+    border-bottom: 2px solid rgb(238, 223, 122);
     display: flex;
     padding: 2.6vw 3.12vw;
 }
@@ -171,9 +177,10 @@ html, body{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(238, 223, 122);
 }
 #work1 h3{
+    color: rgb(160, 71, 71);
     font-size: 1.71vw;
     font-weight: 700;
 }
@@ -192,14 +199,14 @@ html, body{
     padding: 2.6vw 0vw;
 }
 .work2-part:nth-child(1){
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(238, 223, 122);
 }
 .work2-part .elem{
     width: 50%;
     height: 100%;
 }
 .work2-part .elem:nth-child(1){
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(238, 223, 122);
 }
 .work2-part .elem:nth-child(2){
     padding-left: 3.12vw;
@@ -255,6 +262,9 @@ html, body{
     margin-top: 25vw;
     color: rgb(255, 255, 255);
     text-align: center;
+}
+.elem p{
+    color: rgb(160, 71, 71);
 }
 @media (max-width:600px){
     #intro{
