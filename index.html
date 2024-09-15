@@ -5,73 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afiur Nur</title>
+    <link rel="icon" href="" type="" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
 
-
+    <!-- Navigation bar on top (Visible when in desktop mode). -->
     <nav>
         <div class="nav-container">
-            <div class="logo" data-aos="zoom-in"
-            data-aos-duration="1500">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 <span>Afiur Nur</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="100"><a href="">Home</a></div>
-                <div class="link" data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="200"><a href="">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="./">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
+                        href="contact.html">Contact</a></div>
             </div>
         </div>
-        <i class="ri-home-heart-fill hamburg" onclick="hamburg()"></i>
+        <i class="ri-menu-2-line hamburg" onclick="hamburg()"></i>
         <div class="dropdown">
-            <a href="#">Home</a>
-            <a href="#">Contact</a>
+            <a href="./">Home</a>
+            <a href="contact.html">Contact</a>
             <i class="ri-close-circle-fill cancel" onclick="cancel()"></i>
         </div>
     </nav>
-
+    <!-- upto this is visible in desktop mode and then display:none on smaller pixel devices. -->
 
     <section>
+        <!-- main content's of the website. -->
         <div class="main-container">
-            <div class="image" data-aos="zoom-in-right"
-            data-aos-duration="3000">
+            <!-- iImage of the landing page with added animate on scroll animations. -->
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="3000">
                 <img src="assets/main.png" alt="" srcset="">
             </div>
+            <!-- This part contains the contents beside the image. These also have animate on scroll animations. -->
             <div class="content">
-                <h1 data-aos="fade-right"
-                data-aos-duration="1500"
-                data-aos-delay="700">Hey I'm <span>Afiur</span></h1>
-                <h2 class="typing-text">I'm a <span data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900"></span></h2>
-                <p data-aos="flip-up"
-                data-aos-duration="1500"
-                data-aos-delay="1100">As a digital artist, I focus on producing top-notch and impactful quality of my services.</p>
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Afiur</span></h1>
+                <!-- The span tag contains animation of typing effect. -->
+                <h2 class="typing-text">I'm a <span data-aos="fade-left" data-aos-duration="1500"
+                        data-aos-delay="900"></span></h2>
+                <!-- This is the about section section beside the image. -->
+                <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">As a digital artist, I focus on
+                    producing top-notch and impactful quality of my services.</p>
+                <!-- The social media icons reside here. -->
                 <div class="social-links">
-                    <a href="" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i class="ri-github-fill"></i></a>
-                    <a href="" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"><i class="ri-twitter-x-fill"></i></a>
-                    <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="ri-facebook-circle-fill"></i></a>
-                    <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://github.com/AfiurNur" target="_blank" data-aos="zoom-out" data-aos-duration="1500"
+                        data-aos-delay="1200"><i class="ri-github-fill"></i></a>
+                    <a href="https://x.com/AfiurNur" target="_blank" data-aos="zoom-out" data-aos-duration="1500"
+                        data-aos-delay="1300"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100077986013483" target="_blank" data-aos="fade-up"
+                        data-aos-duration="1500" data-aos-delay="1400"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="https://www.instagram.com/afiur.nur/" target="_blank" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="1500"><i class="ri-instagram-fill"></i></a>
                 </div>
-                <div class="btn" data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="1700">
-                    <button>Download CV</button>
+                <!-- The download CV button. -->
+                <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700">
+                    <a href="path/to/yourfile.txt" download="filename.txt"><button>Download CV</button></a>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- This is the javascript section. -->
+    <!-- This script is for the animation on scroll animations.  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init({offset:0});
+        AOS.init({ offset: 0 });
     </script>
 
-
+    <!-- This script is for the responsive design of the website.  -->
     <script>
         function hamburg() {
             const navbar = document.querySelector(".dropdown")
