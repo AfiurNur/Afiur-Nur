@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
-    overflow: hidden;
     background-color: rgb(0, 0, 0);
 }
 
-nav{
+nav {
     width: 100%;
     height: 10vh;
     position: sticky;
 }
 
-.nav-container{
+.nav-container {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-container .logo span{
+.nav-container .logo span {
     font-size: 2.3rem;
     font-weight: bold;
     color: rgb(159, 18, 18);
@@ -41,7 +41,7 @@ nav{
 }
 
 .hamburg,
-.cancel{
+.cancel {
     cursor: pointer;
     position: absolute;
     right: 15px;
@@ -51,7 +51,7 @@ nav{
     display: none;
 }
 
-.nav-container .links a{
+.nav-container .links a {
     font-size: 1.2rem;
     color: white;
     margin: 0 20px;
@@ -60,12 +60,12 @@ nav{
     transition: 0.3s linear;
 }
 
-.nav-container .links a:hover{
+.nav-container .links a:hover {
     color: rgb(159, 18, 18);
     border-bottom: 2px solid rgb(159, 18, 18);
 }
 
-.dropdown{
+.dropdown {
     z-index: 10;
     position: absolute;
     top: 0;
@@ -77,7 +77,7 @@ nav{
     transition: 0.2s linear;
 }
 
-.dropdown a{
+.dropdown a {
     display: flex;
     color: white;
     text-decoration: none;
@@ -87,101 +87,81 @@ nav{
     transition: 0.3s linear;
 }
 
-.dropdown a:hover{
+.dropdown a:hover {
     background-color: rgb(159, 18, 18);
 }
 
-section{
-    width: 100%;
+section {
     height: 100%;
+    width: 100%;
 }
 
-.main-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.main-container .image{
-    width: 500px;
+.main-container {
     height: 80vh;
-    overflow: hidden;
-    padding: 120px 0;
-}
-
-.main-container .image img{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.main-container .image img:hover{
+.main-container .image {
+    font-size: 40rem;
+    height: 100%;
+    width: 500px;
+}
+
+.main-container .image i {
+    width: 100%;
+    color: rgb(159, 18, 18);
+    border: 2px solid #fff;
+    margin: 0px 2vw;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    filter: drop-shadow(0 0 10px rgb(159, 18, 18));
+}
+
+.main-container .image i:hover{
     animation: animate 1.5s ease-in-out infinite;
 }
 
 @keyframes animate {
     0%{
-        scale: 1;
+        font-size: 40rem;
     }
     50%{
-        scale: 1.03;
+        font-size: 40.5rem;
+        filter: drop-shadow(0 0 15px rgb(159, 18, 18));
     }
     100%{
-        scale: 1;
+        font-size: 40rem;
     }
 }
 
-.main-container .content{
+.main-container .content {
     color: white;
-    width: 40%;
+    width: 50%;
     min-height: 100px;
 }
 
-.content h1{
-    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+.main-container .content h2 {
+    font-size: clamp(2.5rem, 2.5rem + 5vw, 1.8rem);
 }
 
-.content h1 span{
-    font-weight: 700;
-    text-shadow: 0 0 10px rgb(159, 18, 18);
+.main-container .content h2 span {
     color: rgb(159, 18, 18);
+    filter: drop-shadow(0 0 10px rgb(159, 18, 18));
 }
 
-.typing-text{
-    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
-    font-weight: 700;
-    position: relative;
-}
-
-.typing-text span{
-    color: rgb(159, 18, 18);
-}
-
-.content p{
-    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+.main-container .content p {
+    font-size: clamp(2rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
 }
 
-.social-links i{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    border: 0.2rem solid rgb(159, 18, 18);
-    border-radius: 20px;
+.main-container .content p span {
     color: rgb(159, 18, 18);
-    margin: 5px 15px 5px 0;
-    font-size: 1.5rem;
-    transition: 0.2s ease-in-out;
-}
-
-.social-links i:hover{
-    scale: 1.3;
     filter: drop-shadow(0 0 10px rgb(159, 18, 18));
-    background-color: rgb(159, 18, 18);
-    color: white;
 }
 
 .content button{
@@ -206,32 +186,39 @@ section{
     box-shadow: 0 0 40px 5px rgb(159, 18, 18);
 }
 
-.end-of-page{
+.ult-container {
+    height: 100vh;
     width: 100%;
-    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 65px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(159, 18, 18);
+    margin-top: 100px;
+    text-align: center;
 }
-.end-of-page h4{
-    color: white;
+
+.ult-container .contacts h2 {
+    width: 20vw;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 30px;
 }
-.end-of-page i{
-    border: 0.1rem solid white;
-    padding: 2px;
-    border-radius: 4px;
-    transition: 0.2s ease-in-out;
-}
-.end-of-page i:hover{
-    scale: 1.3;
-    font-size: 1.2rem;
+
+.ult-container .contacts h3{
     color: rgb(159, 18, 18);
-    background-color: transparent;
-    filter: drop-shadow(0 0 10px rgb(159, 18, 18));
-    padding: 5px;
-    border: 0.2rem solid rgb(159, 18, 18);
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
 }
-@media (max-width:884px){
+
+#type-animation{
+    font-size: 5rem;
+}
+
+@media (max-width:884px) {
     nav .logo{
         position: absolute;
         top: 16px;
@@ -257,31 +244,35 @@ section{
         width: 80%;
         margin-top: -40px;
     }
-
-    .social-links i{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-
-    .typing-text{
-        font-size: 2rem;
-    }
-
-    .main-container .image{
+    .main-container .image i{
         z-index: -1;
-        width: 50%;
-        height: 60%;
+        font-size: 20rem;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        width: 40%;
+        height: 35%;
     }
 
+    .ult-container .contacts h2 {
+        width: 40vw;
+        position: absolute;
+        top: 120%;
+        left: 30%;
+    }
 }
 
 @media (max-width:440px) {
-    .main-container .image{
-        width: 70%;
+    .main-container .image i{
+        border: none;
+        position: absolute;
+        left: 10%;
+        top: 15%;
     }
 
     .main-container .content{
+        position: absolute;
+        top: 60%;
         width: 80%;
     }
 

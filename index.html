@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afiur Nur</title>
-    <link rel="icon" href="assets/afiur_nur.ico" type="image/icon" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Afiur Nur</title>
+        <link rel="icon" href="assets/afiur_nur.ico" type="image/icon" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -23,7 +26,7 @@
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="./">Home</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
-                        href="contact.html">Contact</a></div>
+                        href="contact/contact.html">Contact</a></div>
             </div>
         </div>
         <i class="ri-menu-2-line hamburg" onclick="hamburg()"></i>
@@ -46,7 +49,7 @@
             <div class="content">
                 <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Afiur</span></h1>
                 <!-- The span tag contains animation of typing effect. -->
-                <h2 class="typing-text">I'm a <span data-aos="fade-left" data-aos-duration="1500"
+                <h2 class="typing-text">I'm a <span id="typing-animation" data-aos="fade-left" data-aos-duration="1500"
                         data-aos-delay="900"></span></h2>
                 <!-- This is the about section section beside the image. -->
                 <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">As a digital artist, I focus on
@@ -59,8 +62,8 @@
                         data-aos-delay="1300"><i class="ri-twitter-x-fill"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100077986013483" target="_blank" data-aos="fade-up"
                         data-aos-duration="1500" data-aos-delay="1400"><i class="ri-facebook-circle-fill"></i></a>
-                    <a href="https://www.instagram.com/afiur.nur/" target="_blank" data-aos="fade-up" data-aos-duration="1500"
-                        data-aos-delay="1500"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.instagram.com/afiur.nur/" target="_blank" data-aos="fade-up"
+                        data-aos-duration="1500" data-aos-delay="1500"><i class="ri-instagram-fill"></i></a>
                 </div>
                 <!-- The download CV button. -->
                 <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700">
@@ -75,37 +78,6 @@
             <h4><- Made-by-Afiur-Nur -- <i class="ri-copyright-line"></i> -- <span>2024</span> -></h4>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-    <!-- This is the javascript section. -->
-    <!-- This script is for the animation on scroll animations.  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ offset: 0 });
-    </script>
-
-    <!-- This script is for the responsive design of the website.  -->
-    <script>
-        function hamburg() {
-            const navbar = document.querySelector(".dropdown")
-            navbar.style.transform = "translateY(0px)"
-        }
-
-        function cancel() {
-            const navbar = document.querySelector(".dropdown")
-            navbar.style.transform = "translateY(-400px)"
-        }
-    </script>
-
-
 </body>
 
 </html>
